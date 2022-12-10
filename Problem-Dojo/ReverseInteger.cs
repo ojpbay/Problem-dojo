@@ -21,7 +21,7 @@ namespace Problem_Dojo
             while (num > 0)
             {
                 result = result * 10 + num % 10;
-                num /= 1;
+                num /= 10;
             }
 
             return isNegative ? result * -1 : result;
