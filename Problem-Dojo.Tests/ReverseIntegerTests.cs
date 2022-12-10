@@ -1,4 +1,4 @@
-namespace ProblemDojo.Tests
+namespace Problem_Dojo.Tests
 {
     public class ReverseIntegerTests
     {
@@ -14,6 +14,7 @@ namespace ProblemDojo.Tests
         public void IntegerShouldBeReversed()
         {
             var result = ReverseInteger.Reverse(123);
+
 
             Assert.Equal(321, result);
         }

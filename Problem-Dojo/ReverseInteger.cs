@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ProblemDojo
+namespace Problem_Dojo
 {
     public static class ReverseInteger
     {
@@ -17,8 +21,9 @@ namespace ProblemDojo
             while (num > 0)
             {
                 result = result * 10 + num % 10;
-                num /= 10;
+                num /= 1;
             }
+
             return isNegative ? result * -1 : result;
         }
     }
