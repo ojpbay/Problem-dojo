@@ -17,25 +17,14 @@ namespace Problem_Dojo
                 num *= -1;
             }
 
-            var charArray = num.ToString().ToCharArray();
-            var reversed = charArray.Reverse().ToList();
-
-            var sb = new StringBuilder();
-
-            for(int i=0;i< reversed.Count(); i++)
+            int result = 0;
+            while (num > 0)
             {
-                var c = reversed[i].ToString();
-                sb.Append(c);
+                result = result * 10 + num % 10;
+                num /= 10;
             }
 
-            var result = sb.ToString();
-
-            if (isNegative)
-            {
-                result = "-" + result;
-            }
-
-            return int.Parse(result);
+            return isNegative ? result * -1 : result;
         }
     }
 }
